@@ -26,16 +26,16 @@ export default {
 
 <template>
   <h1>HealthCheck view</h1>
-  <pv-datatable :value="products" tableStyle="min-width: 50rem" paginator :rows="3" :rows-per-page-options="[3,6,9,13]">
-    <pv-column field= "id" header="Record Id"></pv-column>
-    <pv-column field="treadmillId" header="Treadmill Id"></pv-column>
-    <pv-column field="serialNumber" header="Serial Number"></pv-column>
-    <pv-column field="name" header="Center Name"></pv-column>
-    <pv-column field="quantity" header="Date"></pv-column>
-    <pv-column field="hour" header="Time"></pv-column>
-    <pv-column field="volts" header="Volts"></pv-column>
-    <pv-column field="watts" header="Watts"></pv-column>
-    <pv-column field="hp" header="HP"></pv-column>
+  <pv-datatable :value="products" tableStyle="min-width: 50rem" paginator :rows="3" :rows-per-page-options="[3,6,9,13]" sort-mode="multiple"> 
+    <pv-column field= "id" header="Record Id" sortable></pv-column>
+    <pv-column field="treadmillId" header="Treadmill Id" sortable></pv-column>
+    <pv-column field="serialNumber" header="Serial Number" sortable></pv-column>
+    <pv-column field="name" header="Center Name" sortable></pv-column>
+    <pv-column field="quantity" header="Date" sortable></pv-column>
+    <pv-column field="hour" header="Time" sortable></pv-column>
+    <pv-column field="volts" header="Volts" sortable></pv-column>
+    <pv-column field="watts" header="Watts" sortable></pv-column>
+    <pv-column field="hp" header="HP" sortable></pv-column>
 </pv-datatable>
 </template>
 
